@@ -8,36 +8,7 @@ Bước 1: Tạo trang tính và chuẩn nó để nhận data từ thiết bị
   - TOOL -> Script editor -> 1 tab editor (đổi tên tập lệnh - temphum_log)
   - copy code và past và Gscript
   #####################################
-    // Created by Sujay S. Phadke, 2017
-// All Rights Reserved.
-// Github: https://github.com/electronicsguy
-//
-// Read/Write to Google Sheets using REST API.
-// Can be used with ESP8266 & other embedded IoT devices.
-// 
-// Use this file with the ESP8266 library HTTPSRedirect
-// 
-// doGet() and doPost() need the spreadsheet ID. Cannot use "active spreadsheet" here since
-// the device can operate without the spreadsheet even being open.
-// http://stackoverflow.com/questions/4024271/rest-api-best-practices-where-to-put-parameters
-// http://trevorfox.com/2015/03/rest-api-with-google-apps-script
-
-// Similar API docs:
-// https://gspread.readthedocs.org/en/latest/
-// https://smartsheet-platform.github.io/api-docs/#versioning-and-changes
-// http://search.cpan.org/~jmcnamara/Excel-Writer-XLSX/lib/Excel/Writer/XLSX.pm
-
-// http://forum.espruino.com/conversations/269510/
-// http://stackoverflow.com/questions/34691425/difference-between-getvalue-and-getdisplayvalue-on-google-app-script
-// http://ramblings.mcpher.com/Home/excelquirks/gooscript/optimize
-
-// Things to remember with getValue() object format:
-// 1. Partial dates or times-only will be replaced with a full date + time, probably in the
-//    year 1989. Like this: Sat Dec 30 1899 08:09:00 GMT-0500 (EST)
-// 2. Dollar ($) currency symbol will be absent if cell contains currency.
-//    This may be locale-dependent.
-// 3. Scientific notation will be replaced by decimal numbers like this: 0.0000055
-
+ 
 // Script examples
 // https://developers.google.com/adwords/scripts/docs/examples/spreadsheetapp
 
