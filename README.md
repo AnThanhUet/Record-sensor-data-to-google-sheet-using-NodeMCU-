@@ -1,13 +1,12 @@
-# Ghi dữ liệu cảm biến vào google sheet bằng NodeMCU Ghi giá trị nhiệt độ và độ ẩm DHT11
+# Record sensor data to google sheet using NodeMCU Record temperature and humidity value DHT11
 - ESP 8266
 - DHT11
-# 
-Bước 1: Tạo trang tính và chuẩn nó để nhận data từ thiết bị bằng GScript
-  - Tạo 1 sheet
-  - Đặt tên tiều đề tài liệu (Data Sensor) và tên "SHEET" (temphum)
-  - TOOL -> Script editor -> 1 tab editor (đổi tên tập lệnh - temphum_log)
-  - copy code và past và Gscript
-  #####################################
+## Step 1: Create a spreadsheet and prepare it to receive data from a device using GScript
+  - Create a sheet
+  - Name the document title (Data Sensor) and name "SHEET" (temphum)
+  - TOOL -> Script editor -> 1 tab editor (rename script - temphum_log)
+  - copy code and past và Gscript
+## Flowing example
  
 // Script examples
 // https://developers.google.com/adwords/scripts/docs/examples/spreadsheetapp
@@ -142,13 +141,13 @@ SHEET ID :
  *** Copy ID Cript: 
  Link: https://script.google.com/macros/s/AKfycbxwoQGvDkf6tMQTM1wrA5WckBtt6sWy_cgycc0gpD6gvPoxHM_3/exec
  ID: AKfycbxwoQGvDkf6tMQTM1wrA5WckBtt6sWy_cgycc0gpD6gvPoxHM_3
- #####################################################################
+## =========================
 4 Thư viện chính:
   - ESP8266WWiFi
   - HTTPSRedirect: dễ dàng giao tiếp với máy chủ thông qya http và https
   - DebugMacros: 
   - DHT
-  ####################
+## =========================
 #include <ESP8266WiFi.h>
 #include "HTTPSRedirect.h"
 #include "DebugMacros.h"
@@ -156,14 +155,14 @@ SHEET ID :
 #define DHTPIN D4 // Ghim mà DHT được kết nối
 #define DHTTYPE DHT11 // Khai báo Loại DHT
 DHT dht ( DHTPIN, DHTTYPE ) ;
-  ###################
+## =========================
 float h;
 float t;
 String sheetHumid = "";
 String sheetTemp = "";
 const char* ssid = " ";                //Put wifi ssid within the quotes
 const char* password = " ";         //Put WiFi password within the quotes
-  ###################
+## =========================
 const char* host = "script.google.com";
 const char *GScriptId = "enter your GSCript ID here"; // Replace with your own google script id
 const int httpsPort = 443; //the https port is same
