@@ -128,23 +128,23 @@ function GetEventsOneWeek(){
   //Logger.log(str);
   return str;
 }
-#############################################################
-Chỉnh sủa SHEET NAME và SHEET ID trong code 
+## =========================
+Edit SHEET NAME and SHEET ID in the code
 SHEET NAME: temphum
 SHEET ID : 
-  - Vào tab gg sheet link URL: https://docs.google.com/spreadsheets/d/1kUNeFjmRXzkU3YXHYwKDSCfbr7b50QPtXiaK8x3oA4M/edit#gid=0
+  - tab gg sheet link URL: https://docs.google.com/spreadsheets/d/1kUNeFjmRXzkU3YXHYwKDSCfbr7b50QPtXiaK8x3oA4M/edit#gid=0
   - ID: 1kUNeFjmRXzkU3YXHYwKDSCfbr7b50QPtXiaK8x3oA4M
 ==>> Save file -. Tab script Publish -> Deploy as Web app..
-    - đặt tên project
+    - project name
     - Who has as tho app: Anyone, even anonymous
     ===> Deloy _. next acep...
  *** Copy ID Cript: 
  Link: https://script.google.com/macros/s/AKfycbxwoQGvDkf6tMQTM1wrA5WckBtt6sWy_cgycc0gpD6gvPoxHM_3/exec
  ID: AKfycbxwoQGvDkf6tMQTM1wrA5WckBtt6sWy_cgycc0gpD6gvPoxHM_3
 ## =========================
-4 Thư viện chính:
+4 Main library:
   - ESP8266WWiFi
-  - HTTPSRedirect: dễ dàng giao tiếp với máy chủ thông qya http và https
+  - HTTPSRedirect: easily communicate with the server via http and https
   - DebugMacros: 
   - DHT
 ## =========================
