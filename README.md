@@ -163,7 +163,7 @@ String sheetTemp = "";
 const char* ssid = " ";                //Put wifi ssid within the quotes
 const char* password = " ";         //Put WiFi password within the quotes
 ## =========================
-const char* host = "script.google.com";
+const char* host = "script.google.com"; </br>
 const char *GScriptId = "enter your GSCript ID here"; // Replace with your own google script id
 const int httpsPort = 443; //the https port is same
 
